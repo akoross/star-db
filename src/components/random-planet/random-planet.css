@@ -1,0 +1,21 @@
+.random-planet {
+   padding: 1rem 1rem 1rem;
+   min-height: 190px;
+}
+
+.random-planet > img {
+   border-radius: 10px;
+   height: 180px;
+   width: 200px;
+   margin-right: 50px;
+}
+
+.random-planet ul {
+   width: 100%;
+}
+
+.random-planet li {
+   background: transparent;
+   border-left: 0;
+   border-right: 0;
+}

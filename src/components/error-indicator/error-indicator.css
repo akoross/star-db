@@ -1,0 +1,17 @@
+.error-indicator {
+   color: rgb(206, 121, 9);
+   width: 100%;
+   text-align: center;
+}
+.error-indicator img {
+   width: 50px;
+   margin-bottom: 10px;
+}
+
+.error-indicator span {
+   display: block;
+}
+.error-indicator .boom {
+   text-transform: uppercase;
+   font-weight: bold;
+}

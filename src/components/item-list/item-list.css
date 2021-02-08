@@ -1,0 +1,7 @@
+.item-list {
+   margin-bottom: 1rem;
+}
+
+.item-list li {
+   cursor: pointer;
+}

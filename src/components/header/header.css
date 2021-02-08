@@ -1,0 +1,16 @@
+.header a {
+   color: #ffffff;
+}
+.header a:hover {
+   text-decoration: none;
+}
+.header ul {
+   padding-top: 0.5rem;
+}
+.header ul li.list-group-item {
+   height: 3rem;
+   color: #20c997;
+   vertical-align: middle;
+   text-transform: uppercase;
+   cursor: pointer;
+}
