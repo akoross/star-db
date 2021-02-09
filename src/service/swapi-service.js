@@ -22,14 +22,14 @@ export default class SwapiService {
       const person = await this.getResource(`/people/${id}`);
       return this._transformPerson(person);
    }
-   _transformPerson(person) {
+   _transformPerson = (person) => {
       return {
          id: this._extractId(person),
          name: person.name,
-         birth_year: person.birth_year,
+         birthYear: person.birth_year,
          gender: person.gender,
       };
-   }
+   };
 
    async getAllPlanets() {
       const res = await this.getResource(`/planets/`);
@@ -39,7 +39,7 @@ export default class SwapiService {
       const planet = await this.getResource(`/planets/${id}`);
       return this._transformPlanet(planet);
    }
-   _transformPlanet(planet) {
+   _transformPlanet = (planet) => {
       return {
          id: this._extractId(planet),
          name: planet.name,
@@ -47,7 +47,7 @@ export default class SwapiService {
          population: planet.population,
          diameter: planet.diameter,
       };
-   }
+   };
 
    async getAllStarships() {
       const res = await this.getResource(`/starships/`);
@@ -57,7 +57,7 @@ export default class SwapiService {
       const starship = await this.getResource(`/starships/${id}`);
       return this._transformStarship(starship);
    }
-   _transformStarship(starship) {
+   _transformStarship = (starship) => {
       return {
          id: this._extractId(starship),
          name: starship.name,
@@ -65,5 +65,5 @@ export default class SwapiService {
          cost: starship.cost_in_credits,
          passengers: starship.passengers,
       };
-   }
+   };
 }

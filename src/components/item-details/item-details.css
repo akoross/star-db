@@ -1,11 +1,19 @@
-.item-details img {
-   width: 150px;
-   height: 120px;
-   border-radius: 10px;
-   display: inline-block;
+.item-details {
+   box-sizing: border-box;
+   padding: 0 1rem;
+   min-height: 220px;
 }
-.item-details h2 {
-   display: inline-block;
+
+.item-details img {
+   position: absolute;
+   left: 1rem;
+   top: 0.5rem;
+   width: 150px;
+   border-radius: 10px;
+}
+
+.item-details ul {
+   margin-left: 180px;
 }
 
 .item-details ul li {
